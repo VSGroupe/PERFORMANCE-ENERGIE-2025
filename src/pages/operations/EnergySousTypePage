@@ -17,7 +17,7 @@ const EnergyTypePage = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [energySousTypeToEdit, setEnergySousTypeToEdit] = useState<{ name: string; sector_name: string } | null>(null);
 
-// Edite en sous type d'energie
+
   const energySousTypeIcons: Record<string, any> = {
     'Énergies Fossiles': { 
       icon: Flame,
@@ -56,7 +56,7 @@ const EnergyTypePage = () => {
     }
   };
 
-// Edite en Type d'energie
+
   useEffect(() => {
     const state = location.state as { 
       sector?: string;
