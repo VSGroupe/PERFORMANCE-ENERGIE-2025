@@ -56,6 +56,7 @@ const EnergyTypePage = () => {
     }
   };
 
+// Edite en Type d'energie
   useEffect(() => {
     const state = location.state as { 
       sector?: string;
@@ -90,8 +91,8 @@ const EnergyTypePage = () => {
     }
   };
 
-  const toggleEnergy = (energyType: string) => {
-    setSelectedEnergy(selectedEnergy === energyType ? null : energyType);
+  const toggleEnergySous = (energySousType: string) => {
+    setSelectedEnergysous(selectedEnergysous === energysousType ? null : energysousType);
   };
 
   const toggleDropdown = (energyTypeName: string) => {
